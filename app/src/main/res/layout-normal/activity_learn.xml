@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_learn"
+    tools:context="com.anakooter.guesstheshape.LearnActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="588dp"
+            android:background="@drawable/background_learn" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignBottom="@+id/relativeLayout1"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/relativeLayout1"
+                android:layout_toRightOf="@+id/relativeLayout1"
+                android:clipChildren="false"
+                android:clipToPadding="false" >
+
+                <RatingBar
+                    android:id="@+id/RatingBar2"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Button2"
+                    android:layout_below="@+id/Button2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="17dp"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+
+                <Button
+                    android:id="@+id/Button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/triangle_shape"
+                    android:onClick="onClick" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout3"
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/relativeLayout5"
+                android:layout_below="@+id/relativeLayout1" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar3"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ratingBar3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/square_shape"
+                    android:onClick="onClick" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignLeft="@+id/RelativeLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/RelativeLayout3" >
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:onClick="onClick" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar4"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout3"
+                android:layout_toLeftOf="@+id/relativeLayout4" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar5"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/button5"
+                    android:layout_alignParentBottom="true"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:background="@drawable/rhombus_shape"
+                    android:onClick="onClick" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignLeft="@+id/relativeLayout4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" >
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/oval_shape"
+                    android:onClick="onClick" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar6"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/backButtonLearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/backbutton_learn"
+                android:onClick="onBackClick" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:text="Tap to Learn"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="@dimen/learn_layout_width"
+                android:layout_height="@dimen/learn_layout_height"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:clipChildren="false"
+                android:clipToPadding="false" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/foodRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="23dp"
+                    android:isIndicator="true"
+                    android:numStars="3"
+                    android:stepSize="1" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_shape"
+                    android:onClick="onClick" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

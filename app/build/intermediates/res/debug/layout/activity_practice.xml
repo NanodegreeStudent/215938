@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anakooter.guesstheshape.PracticeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="49dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tick" />
+
+        <Button
+            android:id="@+id/prac4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/prac1"
+            android:layout_alignBottom="@+id/prac1"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@+id/imageView1" />
+
+        <Button
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/prac1"
+            android:background="@drawable/mute" />
+
+        <Button
+            android:id="@+id/prac3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView1"
+            android:layout_alignLeft="@+id/prac4"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/prac2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/prac3"
+            android:layout_alignBottom="@+id/prac3"
+            android:layout_alignLeft="@+id/prac1" />
+
+        <Button
+            android:id="@+id/prac1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/volume"
+            android:layout_marginBottom="37dp"
+            android:layout_marginRight="26dp"
+            android:layout_toLeftOf="@+id/imageView1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:text="Practice Completed!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF4D"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Guess the shape"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/backButtonLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/backbutton_learn"
+        android:onClick="onBackClick" />
+
+</RelativeLayout><!-- From: file:/D:/USB%20Data/GuessShape1/app/src/main/res/layout/activity_practice.xml -->

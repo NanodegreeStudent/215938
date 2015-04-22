@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen  name="learn_layout_height">155dp</dimen>
+    <dimen  name="learn_layout_width">170dp</dimen>
+    <dimen  name="learn_stars_minHeight">26dp</dimen>
+</resources>

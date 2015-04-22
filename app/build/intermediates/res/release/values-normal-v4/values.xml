@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/ChaudhryUmar/Downloads/Android-LensRocket-master/GuessShape1/app/src/main/res/values-normal/dimens.xml -->
+    <eat-comment/>
+    <dimen name="learn_layout_height">155dp</dimen>
+    <dimen name="learn_layout_width">170dp</dimen>
+    <dimen name="learn_stars_minHeight">26dp</dimen>
+</resources>

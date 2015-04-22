@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_application"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/volume"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_reset"
+        android:onClick="resetApplication"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/volume" />
+
+    <Button
+        android:id="@+id/practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learn"
+        android:layout_below="@+id/learn"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/button_practice"
+        android:text=" "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/practice"
+        android:layout_below="@+id/practice"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/button_play"
+        android:text=" "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
+        android:background="@drawable/button_learn"
+        android:text=" "
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
+<!-- From: file:/D:/USB%20Data/GuessShape1/app/src/main/res/layout-large/activity_main.xml -->
